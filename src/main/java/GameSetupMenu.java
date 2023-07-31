@@ -54,7 +54,7 @@ public class GameSetupMenu extends JPanel {
 
             switch (button.getText()) {
                 case "New Game":
-
+                    eventBus.post(new BusEvent(EventType.SETUP_MENU_NEW_GAME));
                     break;
                 case "Load Game":
 
@@ -63,8 +63,7 @@ public class GameSetupMenu extends JPanel {
 
                     break;
                 case "Go Back":
-                    BusEvent busEvent = new BusEvent(EventType.SETUP_MENU_GO_BACK);
-                    eventBus.post(busEvent);
+                    eventBus.post(new BusEvent(EventType.SETUP_MENU_GO_BACK));
                     break;
             }
         }

@@ -25,7 +25,7 @@ public class MainMenu extends JPanel {
         titleContainer = new JPanel();
         titleContainer.setLayout(new BorderLayout());
         titleContainer.setBackground(KeisukeConstants.BACKGROUND_COLOR);
-        Dimension titleContainerDimension = new Dimension(400,200);
+        Dimension titleContainerDimension = new Dimension(400,150);
         titleContainer.setPreferredSize(titleContainerDimension);
         titleContainer.setPreferredSize(titleContainerDimension);
         titleContainer.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // added padding here
@@ -45,7 +45,7 @@ public class MainMenu extends JPanel {
         btnContainer.setLayout(gridLayout);
 
         btnContainer.setBackground(KeisukeConstants.BACKGROUND_COLOR);
-        Dimension btnContainerDimension = new Dimension(400,200);
+        Dimension btnContainerDimension = new Dimension(400,150);
         btnContainer.setPreferredSize(btnContainerDimension);
         btnContainer.setPreferredSize(btnContainerDimension);
 
